@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>知识点复习</title>
+</head>
+
+<body>
+  <!-- 复习1-6级标题 -->
+  <h1 id="1">这是一级标题</h1>
+  <h2>这是二级标题</h2>
+  <h3>这是三级标题</h3>
+  <h4>这是四级标题</h4>
+  <h5>这是五级标题</h5>
+  <h6>这是六级标题</h6>
+
+  <!-- 水平分割线复习 -->
+  <hr>
+
+  <!-- 复习段落标题 -->
+  <p>这是段落标题1</p>
+  <p>这是段落标题2</p>
+
+  <!-- 这是复习注释标签 -->
+
+  <!-- 强调标签复习 -->
+  <strong id="3">这是加粗标签</strong>
+  <em>这是斜体标签</em>
+  <ins>这是下划线标签</ins>
+  <del>这是删除线标签</del>
+
+  <!-- 图片导入复习 -->
+  <p id="2"><img src="./img/壁纸.png" alt="壁纸1" width="300" title="壁纸1"></p>
+
+  <!-- 视频标签复习 -->
+  <video src="./media/yu7.mp4" controls width="300" title="车子" muted loop poster="./media/yu7.jpg">
+  </video>
+  <!-- 视频兼容性写法 -->
+  <video controls width="300" title="车子" poster="./media/yu7.jpg" muted loop>
+    <source src="./media/yu7.mp4" type="video/mp4">
+    <source src="./media/yu7.webm" type="video/webm">
+    <p>您的浏览器不支持 video 标签。请升级浏览器或使用其他浏览器。</p>
+  </video>
+
+  <!-- 音频标签复习 -->
+  <audio src="./media/ldh.mp3" controls title="音频" loop muted></audio>
+
+  <!-- 音频兼容性写法 -->
+  <audio controls>
+    <source src="./media/ldh.mp3" type="audio/mp3">
+    <p>您的浏览器不支持 audio 标签。请升级浏览器或使用其他浏览器。</p>
+  </audio>
+
+  <hr>
+
+  <!-- 超链接复习 -->
+  <a href="https://chat.deepseek.com/" title="跳转官网"><img src="./img/壁纸.png" width="300"></a>
+  <a href="https://chat.deepseek.com/" title="跳转官网" target="_self">Deepseek</a>
+  <a href="#">空链接</a>
+  <a href="https://download.deepseek.com/desktop/dsh-latest-windows-x64.exe">下载链接</a>
+  <a href="mailto:2326300551@qq.com">邮件链接</a>
+
+  <br><br><br><br><br><br><br><br><br>
+  <hr><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <!-- 锚点链接复习 -->
+  <a href="#1">跳转到一级标题</a>
+  <a href="#2">跳转到图片</a>
+  <a href="#3">跳转到加粗标签</a>
+
+  <!-- 网站结构标签复习 -->
+  <header>111</header>
+  <nav>222</nav>
+  <main>
+    777
+    <article>333</article>
+    <aside>444</aside>
+    <section>555</section>
+  </main>
+  <footer>666</footer>
+
+  <!-- div/span标签复习 -->
+  <div><span>这是span标签</span><span>这是span标签</span>这是div标签</div>
+
+  <!-- 列表标签复习 -->
+  <!-- 无序列表 -->
+  <ul>
+    <li>猪爸爸</li>
+    <li>猪妈妈</li>
+    <li>乔治</li>
+    <li>佩奇</li>
+  </ul>
+
+  <!-- 有序列表 -->
+  <ol>
+    <li>111</li>
+    <li>222</li>
+    <li>333</li>
+    <li>444</li>
+  </ol>
+
+  <!-- 描述列表 -->
+  <dl>
+    <dt>家电</dt>
+    <dd>冰箱</dd>
+    <dd>洗衣机</dd>
+    <dd>电视</dd>
+    <dd>空调</dd>
+  </dl>
+  <br><br><br><br>
+  <hr><br><br><br><br><br>
+
+  <!-- 表格标签复习 -->
+  <table>
+    <!-- 表头 -->
+    <thead>
+      <tr>
+        <th>姓名</th>
+        <th>成绩</th>
+      </tr>
+    </thead>
+    <!-- 表身 -->
+    <tbody>
+      <tr>
+        <td>小美</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>大壮</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <td>奥德彪</td>
+        <td>80</td>
+      </tr>
+    </tbody>
+    <!-- 表尾 -->
+    <tfoot>
+      <tr>
+        <td>平均分</td>
+        <td>92.6</td>
+      </tr>
+    </tfoot>
+
+  </table>
+
+  <br><br><br><br><br><br>
+  <hr><br><br><br><br><br><br>
+  <!-- 表单标签复习 -->
+  <!-- input标签 -->
+  <form action="">
+    用户名：<input type="text" placeholder="请输入用户名" name="user" minlength="2" maxlength="20" autocomplete="off">
+    密码：<input type="password" placeholder="请输入密码" name="pwd" minlength="6" maxlength="12" accesskey="k"
+      autocomplete="off">
+
+    <p>
+      <label for="nan">男</label> <input type="radio" name="gender" value="男" id="nan">
+      <label>女<input type="radio" name="gender" value="女"></label>
+      保密<input type="radio" name="gender" value="保密" checked>
+    </p>
+
+    <p>
+      1：<input type="checkbox" name="1" value="1">
+      2：<input type="checkbox" name="1" value="2">
+      3：<input type="checkbox" name="1" value="3" checked>
+    </p>
+
+    <p>
+      <input type="file" multiple accept=".jpg,.png,.gif">
+    </p>
+
+    <!-- button标签复习 -->
+    <button disabled>登录</button>
+  </form>
+
+  <!-- textarea标签复习 -->
+  <form action="">
+    <textarea name="textarea" id="textarea" placeholder="请输入内容" rows="5" cols="30"></textarea>
+  </form>
+
+  <!-- select标签复习 -->
+  <form action="">
+    <select name="" id="">
+      <option value="北京">北京</option>
+      <option value="深圳">深圳</option>
+      <option value="上海" selected>上海</option>
+      <option value="广州">广州</option>
+    </select>
+  </form>
+
+  <!-- 转义字符复习 -->
+  <p>这是左尖括号&lt;</p>
+  <p>这是版权号&copy;</p>
+  <p>这是空格&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;111</p>
+
+
+</body>
+
+</html>
